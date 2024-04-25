@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <div>
+        <h1>Formulario de Contacto</h1>
+    </div>
+    <div>
+        <form action="" method="post">
+            <div>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="motivo">Asunto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="Consulta">Consulta</option>
+                        <option value="Opinion">Opinion</option>
+                        <option value="Reclamo">Reclamo</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="radio" id="suscripcion" name="suscripcion" value="Si" checked>
+                    <label for="suscripcion">Suscribirse</label>
+                    <br>
+                    <input type="radio" id="suscripcion" name="suscripcion" value="No">
+                    <label for="suscripcion">No Suscribirse</label>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                    <button onclick="window.location.href='index.html'">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
