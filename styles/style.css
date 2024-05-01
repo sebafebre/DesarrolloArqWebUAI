@@ -1,0 +1,184 @@
+
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-color: white;
+    height: 150px;
+    width: 100%;
+
+    display: inline-block;
+    margin: 0;
+    h1{
+        margin: 0;
+        color: orangered;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+.subtituloNav{
+    font-size: 13px;
+    color: #f15a08;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+
+}
+
+hr{
+    border: none; /* Elimina el borde predeterminado */
+    height: 1px; /* Establece la altura de la línea */
+    background-color: orangered; /* Establece el color de fondo */
+    margin: 10px 0; /* Añade espacio arriba y abajo de la línea */
+}
+
+.fondoNaranja{
+    background-color: orangered;
+    height: 400px;
+    position: relative;
+    z-index: -1;
+
+}
+
+.block{
+    height: 40px;
+}
+
+
+
+.NoticiaInfoAdentro {
+
+    position: relative; /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
+    z-index: 0;
+    top: -300px;
+
+
+    .infoNoticia {
+        position: absolute; /* Posiciona este elemento de manera absoluta dentro de su contenedor */
+        bottom: 0; /* Lo coloca en la parte superior del contenedor */
+        left: 0; /* Lo coloca en la parte izquierda del contenedor */
+        /*background-color: rgba(0, 0, 0, 0.5);  Fondo semitransparente para mejorar la legibilidad del texto */
+        padding: 10px; /* Añade un poco de espacio alrededor del texto */
+        color: white; /* Color del texto */
+        z-index: 1; /* Coloca este elemento por encima de la imagen */
+    }
+    
+    .infoNoticia .tipoNoticia {
+        font-weight: bold; /* Añade negrita al tipo de noticia */
+        background-color: #f15a08;
+        width: 70px;
+
+    }
+    
+    .infoNoticia .Subtitulo {
+        margin-top: 5px; /* Añade un poco de espacio entre el tipo de noticia y el título */
+    }
+
+
+}
+
+.NoticiaInfoAfuera {
+    position: relative; /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
+    z-index: 0;
+    width: 350px;
+}
+
+.NoticiaInfoAfuera figure {
+    position: relative; /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
+    margin: 0; /* Elimina el margen predeterminado de la figura */
+}
+
+.NoticiaInfoAfuera img {
+    height: 200px;
+    display: block; /* Hace que la imagen se comporte como un bloque */
+}
+
+.tipoNoticia {
+    position: absolute; /* Posiciona este elemento de manera absoluta */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    left: 0; /* Lo coloca en la parte izquierda */
+    font-weight: bold; /* Añade negrita al tipo de noticia */
+    background-color: #f15a08;
+    color: white;
+    padding: 5px;
+}
+
+
+/* Estilo para la imagen */
+figure {
+    margin: 0; /* Elimina el margen predeterminado de la figura */
+}
+
+
+.FormSuscripcion {
+    margin-top: 0;
+    background-color: #f8f8f8; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.FormSuscripcion h2 {
+    color: #ff6600; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.FormSuscripcion button {
+    background-color: #ff6600; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+
+
+
+footer{
+
+    height: 400px;
+
+    .hrArriba{
+        height: 10px;
+        background-color: #f15a08;
+        width: auto;
+    }
+
+    .hrDoble{
+        height: 2px;
+        background-color: #f15a08;
+        width: 60%;
+        right: 30%
+    }
+    img{
+        height: 50px;
+        padding: 15px;
+    }
+
+    a{
+        color: #f15a08;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .botonesFondo{
+        img{
+            padding: 0;
+            width: 100px;
+            height: 40px;
+        }
+
+        .logoBluestack{
+            
+            background-color: blue;
+
+        }
+    }
+    
+}

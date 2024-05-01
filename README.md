@@ -1,9 +1,7 @@
-Actividades de DESARROLLO Y ARQUITECTURA WEB 
 
-Este repositorio contiene las actividades realizadas para la materia de DESARROLLO WEB. Las actividades están enfocadas en el aprendizaje y práctica de HTML, CSS y JavaScript.
+## Web a desarrollar
 
-Actividades HTML 
 
-Actividad 1:
+![alt text](assets/img/image.png)
+![alt text](assets/img/footer.png)
 
-Actividad 2:
