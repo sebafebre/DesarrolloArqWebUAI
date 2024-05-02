@@ -7,42 +7,119 @@ html{
     width: 100%;
 }
 
-header{
+header {
+    position: relative;
+    padding: 10px;
     background-color: white;
     height: 150px;
     width: 100%;
+}
 
-    display: inline-block;
+.Titulo {
+    position: absolute;
+    left: 0;
+    width: 10%;
+}
+
+h1 {
     margin: 0;
-    h1{
-        margin: 0;
-        color: orangered;
+    color: orangered;
+}
+
+a {
+    text-decoration: none;
+}
+
+.marcoDerecha {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+
+
+.barraArriba {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 0;
+    margin-right: 10px;
+    float: right;
+
+    .Fecha {
+        width: 14%;
+        position: absolute;
+        right: 70%;
     }
 
-    a{
-        text-decoration: none;
+    .Publicidad{
+        width: 32%;
+        position: absolute;
+        right: 40%;
+        
+
+    }
+    .Redes{
+        width: 30%;
+        position: absolute;
+        right: 10%;
+
+    }
+    .Buscador{
+        width: 8%;
+        position:  absolute;
+        right: 0;
+
+    
     }
 }
-.subtituloNav{
+
+.barraAbajo{
+    
+
+    position: relative;
+    top: 100px;
+    
+    .barraBlanca{
+        a{
+            padding: 10px;
+        }
+    }
+
+    .SimboloMenu{
+        
+    }
+
+}
+
+.subtituloNav {
     font-size: 13px;
     color: #f15a08;
     text-transform: uppercase;
     font-family: 'Space Mono', monospace;
-
 }
 
-hr{
-    border: none; /* Elimina el borde predeterminado */
-    height: 1px; /* Establece la altura de la línea */
-    background-color: orangered; /* Establece el color de fondo */
-    margin: 10px 0; /* Añade espacio arriba y abajo de la línea */
+hr {
+    border: none;
+    height: 1px;
+    background-color: orangered;
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    top: 60px;
 }
+
 
 .fondoNaranja{
     background-color: orangered;
     height: 400px;
-    position: relative;
+    position: absolute;
     z-index: -1;
+    width: 100%;
 
 }
 
@@ -50,13 +127,18 @@ hr{
     height: 40px;
 }
 
+.PrimerasNoticias{
+    height: 1100px;
+}
 
-
-.NoticiaInfoAdentro {
+.noticiaPrincipal {
 
     position: relative; /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
     z-index: 0;
-    top: -300px;
+    top: 15%;
+    
+    height: 60%;
+    
 
 
     .infoNoticia {
@@ -83,31 +165,45 @@ hr{
 
 }
 
+
+.noticiaSecundaria{
+
+    top: 50%
+   
+
+}
+
+
 .NoticiaInfoAfuera {
-    position: relative; /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
+     /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
     z-index: 0;
-    width: 350px;
+    width: 28%;
+    margin-right: 20px; /* Espacio entre las noticias */
+    float: left; /* Hace que las noticias floten hacia la izquierda */
+    padding: 10px;
+
+    figure {
+        position: relative; /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
+        margin: 0; /* Elimina el margen predeterminado de la figura */
+    }
+    
+    img {
+        width: 100%;
+        display: block; /* Hace que la imagen se comporte como un bloque */
+    }
+    
+    .tipoNoticia {
+        position: absolute; /* Posiciona este elemento de manera absoluta */
+        bottom: 0; /* Lo coloca en la parte inferior */
+        left: 0; /* Lo coloca en la parte izquierda */
+        font-weight: bold; /* Añade negrita al tipo de noticia */
+        background-color: #f15a08;
+        color: white;
+        padding: 5px;
+    }
 }
 
-.NoticiaInfoAfuera figure {
-    position: relative; /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
-    margin: 0; /* Elimina el margen predeterminado de la figura */
-}
 
-.NoticiaInfoAfuera img {
-    height: 200px;
-    display: block; /* Hace que la imagen se comporte como un bloque */
-}
-
-.tipoNoticia {
-    position: absolute; /* Posiciona este elemento de manera absoluta */
-    bottom: 0; /* Lo coloca en la parte inferior */
-    left: 0; /* Lo coloca en la parte izquierda */
-    font-weight: bold; /* Añade negrita al tipo de noticia */
-    background-color: #f15a08;
-    color: white;
-    padding: 5px;
-}
 
 
 /* Estilo para la imagen */
@@ -142,23 +238,31 @@ figure {
 
 footer{
 
+    
     height: 400px;
+    text-align: center;
 
     .hrArriba{
         height: 10px;
         background-color: #f15a08;
         width: auto;
+        top: 0;
     }
 
     .hrDoble{
         height: 2px;
         background-color: #f15a08;
-        width: 60%;
-        right: 30%
+        
+        top: 0;
+        width: 80%;
+        left: 10%;
+        
     }
     img{
         height: 50px;
         padding: 15px;
+        
+        
     }
 
     a{
@@ -166,12 +270,26 @@ footer{
         padding: 10px;
         text-decoration: none;
     }
+    .Copyright{
+        float: left;
+        width: 450px;
+    }
+    .navfooter{
+        float: left;
+        left: 0;
+        width: 75%;
+        height: 30px;
+        font-size: small    ;
+    }
 
     .botonesFondo{
+
+        width: 25%;
+        float: right;
         img{
             padding: 0;
-            width: 100px;
-            height: 40px;
+            width: 90px;
+            height: 30px;
         }
 
         .logoBluestack{
