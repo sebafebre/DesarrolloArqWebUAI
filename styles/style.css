@@ -49,32 +49,33 @@ a {
     left: 0;
     margin-right: 10px;
     float: right;
+    
 
     .Fecha {
-        width: 14%;
+        width: 10%;
         position: absolute;
         right: 70%;
     }
 
     .Publicidad{
-        width: 32%;
+        width: 24%;
         position: absolute;
         right: 40%;
+        
         
 
     }
     .Redes{
-        width: 30%;
+        width: 17%;
         position: absolute;
         right: 10%;
+        
 
     }
     .Buscador{
         width: 8%;
         position:  absolute;
         right: 0;
-
-    
     }
 }
 
@@ -85,14 +86,36 @@ a {
     top: 100px;
     
     .barraBlanca{
+        background-color: white;
+        list-style-type: none; /* Elimina los estilos de viñeta */
+
+        /* Estilos para cada botón */
+        .botonNav {
+            display: inline-block; /* Hace que los botones se muestren en línea */
+            margin-right: 10px; /* Añade un espacio entre los botones */
+        }
+
         a{
             padding: 10px;
         }
-    }
 
-    .SimboloMenu{
+        .cuadroNaranja{
+            background-color: orangered;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+
+            .block{
+                display: block;
+                width: 14px;
+                height: 1px;
+                background: #fff;
+            }
+        }
         
     }
+
+    
 
 }
 
@@ -138,23 +161,28 @@ hr {
     top: 15%;
     
     height: 60%;
-    
+    figure{
+        margin: 5%;
+    }
 
 
     .infoNoticia {
         position: absolute; /* Posiciona este elemento de manera absoluta dentro de su contenedor */
-        bottom: 0; /* Lo coloca en la parte superior del contenedor */
+        top: 54%; /* Lo coloca en la parte superior del contenedor */
         left: 0; /* Lo coloca en la parte izquierda del contenedor */
-        /*background-color: rgba(0, 0, 0, 0.5);  Fondo semitransparente para mejorar la legibilidad del texto */
+        background-color: rgba(0, 0, 0, 0.5);  /*Fondo semitransparente para mejorar la legibilidad del texto */
         padding: 10px; /* Añade un poco de espacio alrededor del texto */
         color: white; /* Color del texto */
         z-index: 1; /* Coloca este elemento por encima de la imagen */
+        margin-left: 5%;
     }
     
     .infoNoticia .tipoNoticia {
         font-weight: bold; /* Añade negrita al tipo de noticia */
         background-color: #f15a08;
         width: 70px;
+        position: relative;
+        top: 100%;
 
     }
     
@@ -175,7 +203,7 @@ hr {
 
 
 .NoticiaInfoAfuera {
-     /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
+    /* Establece la posición relativa para que los elementos absolutamente posicionados se ubiquen relativos a este contenedor */
     z-index: 0;
     width: 28%;
     margin-right: 20px; /* Espacio entre las noticias */
@@ -213,6 +241,7 @@ figure {
 
 
 .FormSuscripcion {
+    
     margin-top: 0;
     background-color: #f8f8f8; /* Color de fondo */
     padding: 20px; /* Espaciado interno */
@@ -298,5 +327,98 @@ footer{
 
         }
     }
+    
+}
+
+
+@media screen and (max-width: 640px)  {
+
+    
+    .Fecha{
+        display: none;
+    }
+    .Publicidad{
+        display: none;
+        
+    }
+    .Redes{
+        display: none;
+
+    }
+    .barraBlanca{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .fondoNaranja{
+        height: 200px;
+
+    }
+    .noticiaPrincipal{
+        
+        width: 100%;
+        top: 10%;
+        img{
+            width: 100%;
+
+        };
+
+        figure{
+            width: 90%;
+        }
+
+
+        .infoNoticia {
+            position: absolute; /* Posiciona este elemento de manera absoluta dentro de su contenedor */
+            top: 17%; /* Lo coloca en la parte superior del contenedor */
+            left: 0; /* Lo coloca en la parte izquierda del contenedor */
+            background-color: rgba(0, 0, 0, 0.5);  /*Fondo semitransparente para mejorar la legibilidad del texto */
+            padding: 10px; /* Añade un poco de espacio alrededor del texto */
+            color: white; /* Color del texto */
+            z-index: 1; /* Coloca este elemento por encima de la imagen */
+            margin-left: 5%;
+            width: 85%;
+        }
+        
+        .infoNoticia .tipoNoticia {
+            font-weight: bold; /* Añade negrita al tipo de noticia */
+            background-color: #f15a08;
+            width: 70px;
+            position: relative;
+            top: 100%;
+    
+        }
+        
+        .infoNoticia .Subtitulo {
+            margin-top: 5px; /* Añade un poco de espacio entre el tipo de noticia y el título */
+        }
+    
+    }
+    .noticiaSecundaria {
+        top: unset; /* Elimina la propiedad 'top' para que las noticias se muestren en la posición predeterminada */
+        width: 100%; /* Establece el ancho al 100% para que ocupe todo el ancho disponible */
+        margin-right: 0; /* Elimina el margen derecho */
+        float: none; /* Elimina la propiedad de flotación */
+        
+        .NoticiaInfoAfuera{
+            width: 80%;
+        }
+    }
+
+    footer{
+        width: 100%;
+        .Copyright{
+            width: 100%;
+        }
+        .botonesFondo{
+            a{
+                padding: 0;
+            }
+        }
+    }
+    
     
 }
